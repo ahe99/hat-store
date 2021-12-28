@@ -88,8 +88,8 @@ const url = 'https://raw.githubusercontent.com/ahe99/HatStore/main/src/'
 
 axios.get(url + 'data.json')
 .then(res=>{
-  for(let item of res.data){
-    item.url ='https://raw.githubusercontent.com/ahe99/HatStore/main/assets/items/'+ item.name + '.png'
+  for(let item of res.data.items){
+    item.url ='https://raw.githubusercontent.com/ahe99/HatStore/main/src/assets/items/'+ item.name + '.png'
     items.push(item)
   }
 }).catch(err=>{
