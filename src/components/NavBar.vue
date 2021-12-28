@@ -26,9 +26,7 @@
 </script>
 
 <style scoped>
-.el-menu{
-  
-}
+
 .nav_link_home{
   padding-right: 0px;
 }
