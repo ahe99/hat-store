@@ -84,7 +84,7 @@ const noItemFound = computed(()=>{
     ).length === 0 ?  true : false
 })
 setTimeout(()=>{loading.value = false},2500);
-const url = 'https://raw.githubusercontent.com/ahe99/HatStore/main/src'
+const url = 'https://raw.githubusercontent.com/ahe99/HatStore/main/src/'
 
 axios.get(url + 'data.json')
 .then(res=>{

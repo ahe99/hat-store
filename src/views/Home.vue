@@ -2,7 +2,7 @@
   <div class="home">
     <el-carousel :interval="2500" :pause-on-hover="false" arrow="never" indicator-position="none">
       <el-carousel-item>
-        <img src="https://raw.githubusercontent.com/ahe99/HatStore/main/assets/items/mainbanner.png" alt="">
+        <img src="https://raw.githubusercontent.com/ahe99/HatStore/main/assets/banners/mainbanner.png" alt="">
       </el-carousel-item>
       <el-carousel-item v-for="item in banners" :key="item">
         <img :src="item.url" alt="">
@@ -28,7 +28,7 @@ const banners = reactive([
 ])
 for (let item of banners){
 
-    item.url = 'https://raw.githubusercontent.com/ahe99/HatStore/main/assets/items/' + item.name +'.png'
+    item.url = 'https://raw.githubusercontent.com/ahe99/HatStore/main/assets/banners/' + item.name +'.png'
 }
 
 </script>
